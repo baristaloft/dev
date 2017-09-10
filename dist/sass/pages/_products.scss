@@ -1,0 +1,22 @@
+.products {
+    .pl-menu {
+        margin-top: 40px;
+        .plm-item {
+            margin: 16px 0 32px 0;
+            h5 {
+                margin: 24px 0;
+                height: 19px;
+            }
+            img {
+                max-height: 152px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .products .pl-menu .plm-item h5 {
+        font-size: 1em;
+    }
+}

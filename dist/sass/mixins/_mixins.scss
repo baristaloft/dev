@@ -1,0 +1,9 @@
+@mixin transition($speed) {
+	transition: all $speed ease-in;
+}
+
+@mixin boxshadow($vertical,$blur,$opacity) {
+	-webkit-box-shadow: 0px $vertical $blur 0px rgba(0,0,0,$opacity);
+	-moz-box-shadow: 0px $vertical $blur 0px rgba(0,0,0,$opacity);
+	box-shadow: 0px $vertical $blur 0px rgba(0,0,0,$opacity);
+}

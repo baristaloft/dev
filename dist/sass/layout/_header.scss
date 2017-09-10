@@ -1,0 +1,47 @@
+header {
+	color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: relative;
+	@include transition(200ms);
+	&.header--home {
+		background-image: url("../images/background-lg-01.png");
+		height: 768px;
+	}
+	&.header--default {
+		background-image: url("../images/background-lg-01.png");
+		height: 360px;
+	}
+	.header-overlay {
+		background: rgba(0,0,0,0.6);
+		width: 100%;
+		height: 100%;
+		padding: 16px;
+		position: absolute;
+		top: 0;
+		.hh-intro {
+			position: relative;
+			top: 65%;
+			-webkit-transform: translateY(-65%);
+			-ms-transform: translateY(-65%);
+			transform: translateY(-65%);
+		}
+	}
+	a {
+	    position: relative;
+    	top: 0;
+    	@include transition(100ms);
+		&:hover {
+	    	top: 5px;
+		}
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	header {
+		&.header--default {
+			height: 320px;
+		}
+	}
+}

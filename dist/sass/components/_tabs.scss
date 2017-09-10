@@ -1,0 +1,159 @@
+.products-menu {
+	margin-top: -176px;
+	@include transition(200ms);
+	.nav-tabs {
+		margin: 0 -12px;
+		border: none;
+		> li {
+			width: 20%;
+			> a {
+				margin: 0 12px;
+				padding: 0;
+				border: none;
+				position: relative;
+				top: 0;
+				@include transition(100ms);
+				@include boxshadow(2px,8px,0.65);
+				img {
+					width: 100%;
+					-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    				filter: grayscale(100%);
+    				@include transition(100ms);
+				}
+				h5 {
+				    background: $gray-base;
+				    color: white;
+				    width: 100%;
+				    padding: 12px 0;
+				    margin: 0;
+				    position: absolute;
+				    bottom: 0;
+				}
+				&:hover, &:focus {
+					border: none;
+					img {
+						-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+	    				filter: grayscale(0);
+					}
+				}
+			}
+			&.active {
+				a {
+					top: 48px;
+					&:hover {
+						top: 48px;
+					}
+					h5 {
+						&:after {
+							top: 100%;
+							left: 50%;
+							border: solid transparent;
+							content: " ";
+							height: 0;
+							width: 0;
+							position: absolute;
+							pointer-events: none;
+							border-color: rgba(17, 17, 17, 0);
+							border-top-color: $gray-base;
+							border-width: 8px;
+							margin-left: -8px;
+						}
+					}
+					img {
+						-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+	    				filter: grayscale(0);
+					}
+				}
+			}
+		}
+	}
+	.dropdown {
+		button, &.open button {
+		    background: none;
+		    border: white 4px solid;
+			h5 {
+				color: white;
+			    margin: 8px 0;
+			    vertical-align: top;
+			    line-height: 24px;
+			    i {
+			    	vertical-align: top;
+			    }
+			}
+			&:hover, &:focus {
+				background: none;
+		    	border-color: white;
+			}
+		}
+	}
+	.dropdown-menu {
+		background: none;
+		position: relative;
+		float: none;
+		text-align: center;
+		@include boxshadow(0,0,0);
+	}
+}
+
+.products-list {
+	margin: 128px 0 40px 0;
+	@include transition(200ms);
+}
+
+@media (min-width: $screen-xs-max) {
+	.products-menu {
+		margin-top: -136px;
+		.nav-tabs {
+			display: block;
+		}
+	}
+}	
+
+@media (max-width: $screen-xs-max) {
+	.products-menu {
+		margin-top: -136px;
+		.nav-tabs {
+			text-align: center;
+		    background: white;
+			width: 100%;
+			padding: 0;
+		    margin: 8px 0 0 0;
+		    overflow: hidden;
+		    position: absolute;
+		    @include boxshadow(2px,8px,.35);
+			> li {
+				width: 100%;
+				&.active {
+					a {
+						top: 0;
+						&:hover {
+							top: 0;
+						}
+					}
+				}
+				> a {
+					margin: 0;
+					@include boxshadow(0,0,0);
+					&:hover, &:focus {
+						h5 {
+							background-color: lighten($gray-light,32%);
+						}
+					}
+					h5 {
+					    text-transform: uppercase;
+						color: $gray-base;
+						background: none;
+						position: relative;
+					    padding: 16px 0;
+						&:after {
+							display: none;
+						}
+					}
+				}
+			} 	
+		} 
+	}
+	.products-list {
+		margin-top: 88px;
+	}
+}

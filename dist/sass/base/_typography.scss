@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Renogare';
+    src: url('../fonts/renogare-regular-webfont.woff2') format('woff2'),
+         url('../fonts/renogare-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'Renogare', serif;
+}
+
+h1, h2, h3, h4, h5 {
+	letter-spacing: .120em;
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: 40px;
+	a {
+		.material-icons {
+		    vertical-align: top;
+		    margin-top: -1px;
+		    position: relative;
+		    left: 0;
+		    @include transition(100ms);
+		}
+	}
+	&:after {
+		content: "";
+		background-color: $gray-base;
+		width: 52px;
+		height: 1px;
+		margin: 8px auto;
+		display: block;
+	}
+	&:hover, &:focus {
+		a {
+			text-decoration: none;
+			.material-icons {
+				cursor: pointer;
+		    	left: 5px;
+			}
+		}
+	}
+}
+
+a {
+	p, span, h1, h2, h3, h4, h5 {
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+	&:hover {
+		color: inherit;
+	}
+}

@@ -1,0 +1,25 @@
+.form-control {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.input-group--default {
+	width: 100%;
+	.form-control {
+		margin-bottom: 16px;
+	}
+}
+
+.btn {
+	border: none;
+	border-radius: 0;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+	height: 46px;
+}
+
+textarea {
+	resize: none;
+}

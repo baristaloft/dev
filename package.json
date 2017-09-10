@@ -1,0 +1,19 @@
+{
+  "name": "baristaloft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baristaloft/baristaloft.git"
+  },
+  "author": "Mark Jayson Alimboyogen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baristaloft/baristaloft/issues"
+  },
+  "homepage": "https://github.com/baristaloft/baristaloft#readme"
+}

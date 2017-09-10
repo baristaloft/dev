@@ -1,0 +1,69 @@
+.center-block {
+	float: none;
+}
+
+.container-fluid {
+	max-width: 1200px;
+}
+
+section {
+	padding: 48px 0;
+}
+
+.label {
+	padding: .6em 1.2em;
+	display: inline-block;
+	margin: 4px;
+    &.label-default {
+		font-size: 1em;
+    }
+	&.label-sm {
+		font-size: 1em;
+	    display: inline-block;
+	    margin: 4px;
+	}
+}
+
+#map {
+	height: 600px;
+	width: 100%;
+}
+
+.text-reverse {
+	li, a, p, h1, h2, h3, h4, h5 {
+		color: white;
+	}
+	h4, h2 {
+		&:after {
+			background-color: white;
+		    margin: 8px auto;
+		}
+	}
+}
+
+.dropup, .dropdown {
+	display: inline-block;
+	z-index: 1;
+}
+
+@media (max-width: $screen-sm-max) {
+	.block-sm {
+		width: 100%;
+		display: block;
+	}
+
+	.text-center-sm {
+		text-align: center;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.block-xs {
+		width: 100%;
+		display: block;
+	}
+
+	.text-center-xs {
+		text-align: center;
+	}
+}

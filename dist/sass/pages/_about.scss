@@ -1,0 +1,30 @@
+section {
+    &.about-1 {
+        background-image: url("../images/background-lg-02.jpg");
+        background-position: center center;
+    }
+    &.about-2 {
+        background-image: url("../images/background-lg-03.png");
+        background-position: center center;
+    }
+    &.about-3 {
+        background-color: $gray-lighter;
+    }
+    .history {
+        img {
+            height: 52px;
+            margin: 16px 0 32px 0;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+    }
+    .founder-avatars {
+        margin-bottom: 16px;
+        img {
+            height: 140px;
+            margin-bottom: 8px;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.btn {
+	@include transition(200ms);
+}
+
+.btn-ghost-primary {
+	color: $button-primary;
+	background: none;
+	border: $button-primary 1px solid;
+}

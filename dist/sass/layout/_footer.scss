@@ -1,0 +1,31 @@
+footer {
+	background: $gray-base;
+	padding: 42px 0 72px 0;
+	ul {
+		margin-bottom: 40px;
+		li {
+			.social-icons {
+				width: 32px;
+				height: 32px;
+				margin-right: 8px;
+			}
+			a {
+				line-height: 2.286em;
+				vertical-align: top;
+			}
+		}
+	}
+	.footer-brand {
+		margin-top: 70px;
+		img {
+			height: 120px;
+			margin-bottom: 16px;
+			object-fit: contain;
+		}
+	}
+	h4, h2 {
+		&:after {
+		    margin: 8px 0!important;
+		}
+	}
+}
