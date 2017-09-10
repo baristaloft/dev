@@ -5858,6 +5858,7 @@ h1, h2, h3, h4, h5 {
 h4 {
   margin-bottom: 40px; }
   h4 a .material-icons {
+    font-size: 1.142em;
     vertical-align: top;
     margin-top: -1px;
     position: relative;
@@ -6250,6 +6251,9 @@ footer {
   footer h4:after, footer h2:after {
     margin: 8px 0 !important; }
 
+@media (max-width: 767px) {
+  footer h4:after, footer h2:after {
+    margin: 8px auto !important; } }
 .comingsoon {
   background: url("../../dist/images/coming-soon-bg-01.jpg") repeat center center;
   width: 100%;

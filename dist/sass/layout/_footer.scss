@@ -29,3 +29,9 @@ footer {
 		}
 	}
 }
+
+@media (max-width: $screen-xs-max) {
+	footer h4:after, footer h2:after {
+	    margin: 8px auto!important;
+	}
+}
