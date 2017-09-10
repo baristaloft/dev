@@ -6229,7 +6229,17 @@ section.discover {
     padding: 40px 0; }
     section.discover .discover-list img {
       margin-bottom: 24px; }
+section.other {
+  background: #e6e6e6; }
+  section.other .other-box {
+    margin-top: 120px; }
+    section.other .other-box .ob-content {
+      background: white;
+      padding: 32px; }
 
+@media (max-width: 767px) {
+  section.other .other-box {
+    margin-top: 40px; } }
 footer {
   background: #111;
   padding: 42px 0 72px 0; }

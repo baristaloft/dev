@@ -11,4 +11,20 @@ section {
 	    	}
 	    }
 	}
+	&.other {
+	    background: $gray-lighter;
+		.other-box {
+		    margin-top: 120px;
+		    .ob-content {
+			    background: white;
+			    padding: 32px;
+		    }
+		}
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	section.other .other-box  {
+		margin-top: 40px;
+	}
 }
