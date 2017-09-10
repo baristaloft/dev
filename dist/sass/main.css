@@ -5888,6 +5888,7 @@ a:hover {
   body {
     font-size: 10px; } }
 .form-control {
+  font-size: 1em;
   border: none;
   border-radius: 0;
   box-shadow: none; }
@@ -5973,20 +5974,31 @@ nav {
     top: -127px; }
 
 @media (max-width: 767px) {
-  nav.navbar .navbar-collapse {
-    background-color: #111;
-    padding: 0; }
-    nav.navbar .navbar-collapse ul {
-      width: 100%;
-      margin: 0; }
-      nav.navbar .navbar-collapse ul li {
-        width: 100%; }
-        nav.navbar .navbar-collapse ul li a {
-          line-height: 82px;
+  nav.navbar {
+    height: 48px; }
+    nav.navbar .navbar-collapse {
+      background-color: #111;
+      padding: 0; }
+      nav.navbar .navbar-collapse ul {
+        width: 100%;
+        margin: 0; }
+        nav.navbar .navbar-collapse ul li {
+          line-height: 48px;
           width: 100%; }
-          nav.navbar .navbar-collapse ul li a:hover {
-            border: none;
-            background-color: #333333; } }
+          nav.navbar .navbar-collapse ul li a {
+            line-height: 48px;
+            width: 100%; }
+            nav.navbar .navbar-collapse ul li a:hover {
+              border: none;
+              background-color: #333333; }
+    nav.navbar .navbar-toggle {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-right: 8px;
+      border: white 1px solid; }
+    nav.navbar .logo-left img {
+      height: 48px;
+      padding: 8px; } }
 .products-home {
   padding: 40px 0 0 0; }
   .products-home .ph-block {
@@ -6027,6 +6039,7 @@ nav {
       background: rgba(0, 0, 0, 0.7); }
 
 .btn {
+  font-size: 1em;
   transition: all 200ms ease-in; }
 
 .btn-ghost-primary {
@@ -6107,6 +6120,7 @@ nav {
       background: none;
       border-color: white; }
   .products-menu .dropdown-menu {
+    font-size: 1em;
     background: none;
     position: relative;
     float: none;
@@ -6196,8 +6210,15 @@ header {
       top: 5px; }
 
 @media (max-width: 767px) {
+  header.header--home {
+    height: 540px; }
   header.header--default {
-    height: 320px; } }
+    height: 300px; }
+  header .header-overlay .hh-intro {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); } }
 section.discover {
   background-color: #e9e9e9;
   background-image: url(../../dist/images/home-bg-01.png);

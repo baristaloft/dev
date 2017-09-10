@@ -40,8 +40,19 @@ header {
 
 @media (max-width: $screen-xs-max) {
 	header {
+		&.header--home {
+			height: 540px;
+		}
 		&.header--default {
-			height: 320px;
+			height: 300px;
+		}
+		.header-overlay {
+			.hh-intro {
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
 		}
 	}
 }
