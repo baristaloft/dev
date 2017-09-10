@@ -41,13 +41,13 @@
         				<div class="col col-sm-8 col-xs-10 center-block">
 		        			<h1 class="text-uppercase">The best coffee and tea in the local</h1>
 		        			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-		        			<p><a href="#"><i class="material-icons md-48">keyboard_arrow_down</i></a></p>
+		        			<p><a class="second-fold" href="#"><i class="material-icons md-48">keyboard_arrow_down</i></a></p>
 		        		</div>
 		        	</div>
         		</div>
         	</div>
         </header>
-        <section class="text-center">
+        <section class="text-center" id="explore">
             <div class="container-fluid">
 				<div class="row">
 					<div class="col col-sm-8 col-xs-10 center-block">
@@ -281,7 +281,9 @@
         </footer>
 	</body>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="dist/javascripts/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHALg1MBc3euI8vstMVM9lC54XvMIvm6k&callback=initMap"></script>
 	<script>
 		function initMap() {
 			var uluru = {lat: 14.1013033, lng: 120.929033};
@@ -304,7 +306,12 @@
 		            nav.removeClass("remove-fix");
 		        }
 		    });
+		    $(".second-fold").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#explore").offset().top
+			    }, 1000, 'easeInOutCubic');
+			});
 		});
+
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHALg1MBc3euI8vstMVM9lC54XvMIvm6k&callback=initMap"></script>
 </html>
