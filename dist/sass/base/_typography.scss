@@ -55,3 +55,15 @@ a {
 		color: inherit;
 	}
 }
+
+@media (max-width: $screen-sm-max) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	body {
+		font-size: 10px;
+	}
+}
